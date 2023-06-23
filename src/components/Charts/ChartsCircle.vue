@@ -56,9 +56,6 @@ export default {
 
       <apexchart type="donut" :options="chartOptions" :series="chartSeries" />
     </div>
-    <div v-for="({ produto }, index) in produtos" :key="index">
-      <span>{{ produto }}</span>
-    </div>
   </div>
 </template>
 
