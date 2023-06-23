@@ -2,8 +2,6 @@
 
 export default {
   name: 'ChartsTable',
-  components: {
-  },
   props: ['produtos'],
   data() {
     return {
