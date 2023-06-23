@@ -1,20 +1,28 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld';
+import NavBar from './components/NavBar';
+import FooterH from './components/Footer';
+import AsideLeft from './components/Aside';
+import ArticleH from './components/Article';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    NavBar,
+    AsideLeft,
+    ArticleH,
+    FooterH,
   },
 };
 </script>
+
+<template>
+  <div id="app">
+    <NavBar />
+    <AsideLeft />
+    <ArticleH />
+    <FooterH />
+  </div>
+</template>
 
 <style>
 #app {
