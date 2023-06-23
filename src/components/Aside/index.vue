@@ -1,10 +1,12 @@
 <script>
 import SectionAside from './Section';
+import ButtonToHide from './ButtonToHide';
 
 export default {
   name: 'AsideLeft',
   components: {
     SectionAside,
+    ButtonToHide,
   },
   // data() {
   // return {
@@ -15,13 +17,18 @@ export default {
 </script>
 
 <template>
-  <div>
+  <aside class="d-flex flex-column p-3 bg-white custom-aside">
     <SectionAside />
     <SectionAside />
     <SectionAside />
-  </div>
+    <ButtonToHide class="mt-auto" />
+  </aside>
 </template>
 
-<style scoped>
 
+<style scoped>
+aside {
+  width: 15.6rem !important;
+  height: 1000px;
+}
 </style>
