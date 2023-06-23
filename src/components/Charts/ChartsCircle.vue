@@ -40,11 +40,15 @@ export default {
         dataLabels: {
           enabled: false,
         },
-        labels: ['Apple', 'Orange', 'Banana', 'Mango'],
+        labels: this.produtos.map(arr => arr.produto),
       },
-      chartSeries: [44, 55, 13, 33],
+      chartSeries: this.produtos.map(arr => arr.PorcentagemCalculada),
     };
   },
+  // mounted() {
+  //   console.log('🚀 ~ data ~ produtos:', this.produtos.map(arr => arr.PorcentagemCalculada));
+  //   console.log('🚀 ~ data ~ produtos:', this.produtos.map(arr => arr.produto));
+  // },
 };
 </script>
 
