@@ -11,6 +11,7 @@ export default {
     return {
       chartOptions: {
         fill: {
+          // ajuste add as cores
           colors: ['#1A73E8', '#B32824'],
         },
         plotOptions: {
@@ -45,10 +46,6 @@ export default {
       chartSeries: this.produtos.map(arr => arr.PorcentagemCalculada),
     };
   },
-  // mounted() {
-  //   console.log('🚀 ~ data ~ produtos:', this.produtos.map(arr => arr.PorcentagemCalculada));
-  //   console.log('🚀 ~ data ~ produtos:', this.produtos.map(arr => arr.produto));
-  // },
 };
 </script>
 
