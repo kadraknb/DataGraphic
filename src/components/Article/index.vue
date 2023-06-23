@@ -1,9 +1,10 @@
 <script>
 import Api from '../../services/api';
+import FormatarAPI from '../../utils/formatarAPI';
+
 import ChartsCircle from '../Charts/ChartsCircle';
 import ChartsTable from '../Charts/ChartsTable';
 import ChartsLine from '../Charts/ChartsLine';
-import calculatePercentage from '../../utils/calculatePercentage';
 
 export default {
   name: 'Charts',
@@ -23,12 +24,11 @@ export default {
   },
   methods: {
     async getData() {
-      // ajuste sort protudos
       const produtos = await Api.getTop10Produtos();
-      this.produtos = calculatePercentage(produtos);
+      this.produtos = FormatarAPI.productPercentage(produtos);
 
       const faturamento = await Api.getFaturamentoAnual();
-      this.faturamento = faturamento;
+      this.faturamento = FormatarAPI.billingOrderedDate(faturamento);
     },
   },
 };
@@ -40,7 +40,7 @@ export default {
     Histórico
     <hr />
     <!-- ajuste if -->
-    <div v-if="produtos.length > 0">
+    <div v-if="faturamento.length > 0">
       <ChartsCircle v-bind="{ produtos }" />
       <ChartsTable v-bind="{ produtos }" />
       <ChartsLine v-bind="{ faturamento }" />
