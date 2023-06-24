@@ -20,13 +20,15 @@ export default {
     };
   },
   mounted() {
-    this.getData();
+    this.getProdutos();
+    this.getFaturamento();
   },
   methods: {
-    async getData() {
+    async getProdutos() {
       const produtos = await Api.getTop10Produtos();
       this.produtos = FormatarAPI.productPercentage(produtos);
-
+    },
+    async getFaturamento() {
       const faturamento = await Api.getFaturamentoAnual();
       this.faturamento = FormatarAPI.billingOrderedDate(faturamento);
     },
@@ -36,16 +38,47 @@ export default {
 
 
 <template>
-  <div>
-    Histórico
-    <hr />
-    <!-- ajuste if -->
-    <div v-if="faturamento.length > 0">
-      <ChartsCircle v-bind="{ produtos }" />
-      <ChartsTable v-bind="{ produtos }" />
-      <ChartsLine v-bind="{ faturamento }" />
+  <div class="article-contêiner">
+    <div class="">
+      <h1 id="h-article">Histórico</h1>
+      <hr id="hr-article"/>
+
+      <!-- ajuste if -->
+      <div v-if="faturamento.length > 0" class="row">
+        <div class="w-50">
+          <ChartsCircle :produtos="produtos" />
+        </div>
+        <div class="container-ChartsTable">
+          <ChartsTable :produtos="produtos" />
+        </div>
+        <div class="container-ChartsLine">
+          <ChartsLine :faturamento="faturamento" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<!-- <style scoped></style> -->
+<style scoped>
+#h-article {
+  font-size: x-large;
+  margin-top: 1.9rem;
+}
+#hr-article {
+  margin-top: 0.9rem;
+  margin-bottom: 1.3rem;
+}
+.container-ChartsTable {
+  margin-left: 0.3rem;
+  width: 48.8%;
+}
+.article-contêiner {
+  margin-left: 2.6rem;
+}
+.container-ChartsLine{
+  width: 99.1%;
+  margin-top: 1.29rem;
+  margin-left: 0rem;
+  padding: 0;
+}
+</style>
