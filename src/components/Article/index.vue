@@ -44,8 +44,8 @@ export default {
       <hr id="hr-article"/>
 
       <!-- ajuste if -->
-      <div v-if="faturamento.length > 0" class="row">
-        <div class="w-50">
+      <div v-if="faturamento.length > 0" id="box-Charts" class="row">
+        <div class="container-ChartsCircle">
           <ChartsCircle :produtos="produtos" />
         </div>
         <div class="container-ChartsTable">
