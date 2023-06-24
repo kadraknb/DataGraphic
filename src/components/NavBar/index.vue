@@ -14,9 +14,10 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white custom-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white custom-navbar shadow-default">
+    <div></div>
     <div class="navbar-brand d-flex align-items-center justify-content-center flex-grow-1">
-      <img src="" alt="Logo" />
+      <img class="logo-navBar" src="../../images/Logo.png" alt="Logo" />
     </div>
     <div class="navbar-collapse justify-content-end">
       <ul class="navbar-nav">
@@ -36,7 +37,9 @@ export default {
 
 <style scoped>
 .custom-navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 84px;
+  height: 67px;
+}
+.logo-navBar{
+  width: 60px;
 }
 </style>
