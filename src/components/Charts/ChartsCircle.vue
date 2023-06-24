@@ -12,7 +12,7 @@ export default {
       chartOptions: {
         fill: {
           // ajuste add as cores
-          colors: ['#1A73E8', '#B32824'],
+          colors: ['#50478a', '#514ba3', '#5454bd', '#5050da', '#6666fa', '#ce2626', '#e53535', '#ff5757', '#f66126', '#ff8826'],
         },
         title: {
           margin: 14,
@@ -44,8 +44,7 @@ export default {
           id: 'ChartsCircleDonut',
           type: 'donut',
           animations: {
-            // ajute
-            enabled: false,
+            enabled: true,
             easing: 'easeinout',
             speed: 1000,
           },
@@ -57,12 +56,11 @@ export default {
           fontSize: '10px',
           offsetX: 0,
           offsetY: -13,
-          // offsetY: -177,
           labels: {
             colors: '#707070',
           },
-          // ajuste cor da bolinha markers https://apexcharts.com/docs/options/legend/
           markers: {
+            fillColors: ['#50478a', '#514ba3', '#5454bd', '#5050da', '#6666fa', '#ce2626', '#e53535', '#ff5757', '#f66126', '#ff8826'],
             width: 15,
             height: 15,
           },
@@ -101,5 +99,6 @@ export default {
   width: 97.6%;
   height: 23.3rem;
 }
+
 </style>
 
