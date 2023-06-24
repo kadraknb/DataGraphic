@@ -26,7 +26,7 @@ export default {
 
 <template>
   <nav class="navbar-light bg-white custom-navbar shadow-default">
-    <div></div>
+    <div id="div-oculta"></div>
     <div class="">
       <img class="logo-navBar" src="../../images/Logo.png" alt="Logo" />
     </div>
@@ -43,7 +43,6 @@ export default {
 
 <style scoped>
 .buttons-NavBar {
-  border: solid red;
   width: 300px;
   padding-top: 5px;
   margin-left: -311px;
@@ -55,11 +54,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   height: 67px;
 }
 
 .logo-navBar {
   width: 62px;
+}
+@media (max-width: 700px) {
+  #div-oculta {
+   display: none;
+  }
 }
 </style>
