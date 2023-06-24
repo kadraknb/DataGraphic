@@ -42,7 +42,6 @@ export default {
     <div class="">
       <h1 id="h-article">Histórico</h1>
       <hr id="hr-article"/>
-
       <!-- ajuste if -->
       <div v-if="faturamento.length > 0" id="box-Charts" class="row">
         <div class="container-ChartsCircle">
@@ -78,7 +77,22 @@ export default {
 .container-ChartsLine{
   width: 99.1%;
   margin-top: 1.29rem;
-  margin-left: 0rem;
   padding: 0;
+}
+.container-ChartsCircle{
+  width: 50%;
+}
+@media (max-width: 950px) {
+  .container-ChartsCircle {
+    width: 102%;
+    margin-left: 6px;
+  }
+  .container-ChartsTable{
+    width: 100%;
+    margin-top: 1.29rem;
+  }
+  #box-Charts {
+    flex-direction: column;
+  }
 }
 </style>
