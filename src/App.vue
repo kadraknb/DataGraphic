@@ -17,18 +17,18 @@ export default {
 
 <template>
   <div id="app">
+    <FooterH class="FooterH" />
     <NavBar />
-    <div class="container-fluid">
+    <div class="custom-container container-fluid">
       <div class="row">
         <div id="AsideLeft" class=" pl-lg-0">
           <AsideLeft />
         </div>
-        <div id="ArticleH" class=" pr-0">
+        <div id="ArticleH">
           <ArticleH />
         </div>
       </div>
     </div>
-    <FooterH />
   </div>
 </template>
 
@@ -39,29 +39,43 @@ export default {
 
 #ArticleH {
   width: 87.26%;
+  height: 70%;
 }
+
 #app {
   font-family: Nunito, sans-serif;
   color: #707070;
-
   background-color: #f8f8f8;
-
 }
+
 .shadow-default {
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
+
+.custom-container {
+  height: 100vh;
+}
+
 #ChartsCircleDonut {
   height: 100px;
 }
+
 * {
- /* outline: 1px solid rgba(255, 0, 0, 0.171); */
-}
-#test2 {
- outline: 1px solid rgb(55, 0, 255);
- display: flex;
- flex-wrap: wrap;
- justify-content: flex-start;
- align-items: flex-start;
+  /* outline: 1px solid rgba(255, 0, 0, 0.171); */
 }
 
-</style>
+#test2 {
+  outline: 1px solid rgb(55, 0, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.FooterH {
+  width: 89vw !important;
+  position: fixed;
+  bottom: 0% !important;
+  left: 12.5rem;
+
+}</style>
