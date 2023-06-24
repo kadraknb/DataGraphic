@@ -20,7 +20,6 @@ export default {
   position: fixed;
   bottom: 0% !important;
   left: 0;
-
   width: 12.5rem;
   height: 41px;
 }
@@ -29,4 +28,10 @@ export default {
   width: 15px;
   height: 10px;
 }
+@media (max-width: 1024px) {
+  .box-BarsSolid {
+    width: 2.5rem;
+  }
+}
+
 </style>

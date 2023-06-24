@@ -26,14 +26,20 @@ export default {
     <SectionAside text="Dashboard" :icon="iconBock" />
     <SectionAside text="Clientes potenciais" :icon="iconUserPlus" />
     <SectionAside text="Negócios" :icon="iconBriefcase" />
-    <ButtonToHide class="mt-auto" />
+    <ButtonToHide class="" />
   </aside>
 </template>
 
 
 <style scoped>
+
 aside {
   width: 12.5rem;
-  height: 1000px;
+  height: 100vh;
+}
+@media (max-width: 1024px) {
+  .custom-aside {
+    width: 2.5rem;
+  }
 }
 </style>
