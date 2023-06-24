@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <aside class="d-flex flex-column p-3 bg-white custom-aside">
+  <aside class="d-flex flex-column p-3 bg-white custom-aside mr-md-2">
     <SectionAside />
     <SectionAside />
     <SectionAside />
@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 aside {
-  width: 15.6rem !important;
+  width: 12.5rem;
   height: 1000px;
 }
 </style>
