@@ -5,11 +5,8 @@
     </div>
   </div>
 </template>
-
 <script>
 import VueApexCharts from 'vue-apexcharts';
-import { format } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
 
 export default {
   name: 'ChartsLine',
@@ -64,8 +61,9 @@ export default {
           labels: {
             formatter(value, timestamp) {
               const date = new Date(timestamp);
-              const formattedDate = format(date, 'MMM/yyyy', { locale: ptBR });
-              return formattedDate;
+              const month = date.toLocaleString('default', { month: 'short' });
+              const year = date.getFullYear();
+              return `${month}/${year}`;
             },
             style: {
               colors: '#444444',
@@ -99,15 +97,16 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .custom-apexchart-area {
   height: 23.3rem;
 }
+
 .area {
   width: 97.4%;
   height: 20.3rem;
 }
+
 #P-ChartsLine {
   font-size: medium;
   color: #444444;

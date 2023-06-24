@@ -30,8 +30,6 @@ export default {
           pie: {
             offsetX: 0,
             offsetY: 13,
-            // offsetY: -170,
-            // customScale: 0.405,
             customScale: 1,
             expandOnClick: false,
             donut: {
@@ -82,7 +80,6 @@ export default {
 
 <template>
   <div class="shadow-default bg-white rounded custom-ChartsCircle">
-    <!-- <p id="P-donut" class="text-small">Vendas por produto - Todo período</p> -->
     <div id="chart-donut">
 
       <apexchart type="donut" height="376" :options="chartOptions" :series="chartSeries" />
@@ -94,28 +91,15 @@ export default {
 #P-donut{
   font-size: medium;
   color: #444444;
-  /* margin-top: ; */
   padding-top: 1.3rem;
   padding-left: 1.5rem;
-  /* margin: 0px,0px,0px,0px; */
   margin-bottom: 0.5rem;
-}
-#chart-donut {
- /* outline: 1px solid rgb(55, 0, 255); */
- 
- /* height: 466px; */
-
 }
 
 .custom-ChartsCircle {
   color: #707070;
   width: 97.6%;
   height: 23.3rem;
-  /* margin-bottom: 20px; */
-  /* margin-left: 1.7rem; */
-
-  /* width: 600px; */
-
 }
 </style>
 

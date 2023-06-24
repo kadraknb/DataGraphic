@@ -45,31 +45,20 @@ export default {
   padding-top: 3.4rem !important;
   padding-left: 1.7rem;
   margin-right: 1.7rem;
-  /* outline: 1px solid rgb(255, 0, 0); */
-
 }
 
 .table {
   font-size: x-small;
-  /* outline: 1px solid rgb(255, 0, 0); */
-
-
 }
 
 .table th {
   border-top: 1px solid #f3f3f3;
   border-bottom: 0;
-
   color: #444444;
-
   padding-left: 0;
   padding-top: 0.2rem;
   padding-bottom: 0.28rem;
   padding-right: 1rem;
-  /* pa */
-
-  /* outline: 1px solid rgb(255, 0, 0); */
-
 
 }
 
@@ -83,9 +72,6 @@ export default {
 
 .table td {
   border-top: 1px solid #f3f3f3;
-
-  /* color: #707070; */
   padding: 0.28rem 0;
-  /* outline: 1px solid rgb(255, 0, 0); */
-
-}</style>
+}
+</style>
