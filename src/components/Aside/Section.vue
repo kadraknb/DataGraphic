@@ -42,4 +42,12 @@ export default {
   width: 13px;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .coston-SectionAside p {
+    display: none;
+  }
+  .box-icon {
+    margin-top: 20px;
+  }
+}
 </style>
