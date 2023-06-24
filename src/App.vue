@@ -20,10 +20,10 @@ export default {
     <NavBar />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 pl-0">
+        <div id="AsideLeft" class=" pl-lg-0">
           <AsideLeft />
         </div>
-        <div class="col-lg-9">
+        <div id="ArticleH" class=" pr-0">
           <ArticleH />
         </div>
       </div>
@@ -32,18 +32,36 @@ export default {
   </div>
 </template>
 
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+#ArticleH {
+  width: 87.26%;
+}
 #app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
+  font-family: Nunito, sans-serif;
+  color: #707070;
+
   background-color: #f8f8f8;
-  /* width: ; */
+
+}
+.shadow-default {
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+}
+#ChartsCircleDonut {
+  height: 100px;
 }
 * {
- outline: 1px solid rgba(255, 0, 0, 0.171);
+ /* outline: 1px solid rgba(255, 0, 0, 0.171); */
 }
+#test2 {
+ outline: 1px solid rgb(55, 0, 255);
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+ align-items: flex-start;
+}
+
 </style>
