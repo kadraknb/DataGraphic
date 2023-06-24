@@ -1,27 +1,120 @@
-# manfing
+# Projeto
 
-> A Vue.js project
+Este projeto consiste em um aplicativo (APP) que renderiza estatísticas recebidas da API em três tipos de gráficos.
 
-## Build Setup
+<details>
+<summary><strong> ⚠️ Configurações mínimas para execução do projeto</strong></summary><br />
 
-``` bash
-# install dependencies
-npm install
+Para executar o projeto em sua máquina, é necessário ter o Node.js na versão 16.14.0 instalado.
 
-# serve with hot reload at localhost:8080
-npm run dev
+---
 
-# build for production with minification
-npm run build
+## Instalação do Node.js
 
-# build for production and view the bundle analyzer report
-npm run build --report
+Você pode utilizar o NVM (Node Version Manager) para instalar o Node.js. Siga as instruções abaixo:
 
-# run unit tests
-npm run unit
+1. Instale o NVM, caso ainda não tenha:
+   - [Instruções de instalação do NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Instale a versão 16.14.0 LTS do Node.js e defina como padrão:
+   ```bash
+   nvm install 16.14 --lts
+   nvm use 16.14
+   nvm alias default 16.14
+   ```
 
-# run all tests
-npm test
-```
+---
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+</details>
+
+<details>
+  <summary>
+    <strong>🚀 Instalação e execução</strong>
+  </summary><br>
+
+1. Abra o terminal ou prompt de comando
+
+2. Navegue até a pasta onde deseja clonar o repositório
+
+3. Clone o repositório
+
+- ```bash
+  git clone git@github.com:kadraknb/Manfing.git
+  ```
+
+4. Aguarde o processo de clonagem ser concluído
+
+5. Após o processo de clonagem ser concluído, navegue até a pasta do projeto clonado digitando o comando:
+
+- ```bash
+  cd Manfing
+  ```
+
+6. Inicializar o projeto
+
+- ```bash
+  npm start
+  ```
+
+7. Acesso do projeto
+
+- http://localhost:8080
+
+---
+
+</details>
+
+<details>
+<summary><strong>🏗️ Estrutura do projeto</strong></summary><br />
+
+O projeto é organizado da seguinte forma:
+
+3 . **Front-end:** Desenvolvido com as seguintes dependências:
+
+- `Vue.js v2`
+- `Axios`
+- `ApexCharts`
+- `Bootstrap`
+
+2 . **API:**
+
+- https://plataforma-develop-pp6d7tx7ka-rj.a.run.app/api/teste/top-10-produtos
+
+  - Endpoint que retorna um array com os 10 produtos mais vendidos, contendo as seguintes informações:
+
+    - ```json
+      [
+        {
+          "produto": "CAPA DE FECHAMENTO - CF40-01-10",
+          "vendas": 3,
+          "porcentagem": 15
+        },
+        ...
+      ]
+
+---
+
+- https://plataforma-develop-pp6d7tx7ka-rj.a.run.app/api/teste/faturamento-anual
+
+  - Endpoint que retorna um array com o faturamento mensal do ano, contendo as seguintes informações:
+
+    - ```json
+      [
+        { 
+        "faturamentoMes": "128962.94",
+        "data": "2022-01-01 00:00:00"
+        },
+        ...
+      ]
+
+---
+
+</details>
+
+
+## 📪 Contato
+
+- Email: [vagner_cardoso_s@outlook.com](vagner_cardoso_s@outlook.com)
+- GitHub: [kadraknb](https://github.com/kadraknb)
+- LinkedIn: [vagner-cardos-santos](https://www.linkedin.com/in/vagner-cardos-santos/)
+
+---
