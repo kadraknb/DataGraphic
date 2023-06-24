@@ -12,23 +12,48 @@ export default {
     ArticleH,
     FooterH,
   },
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+  computed: {
+    ajusteTelaWidth() {
+    const width =
+      this.windowWidth > 950 && this.windowWidth < 1700
+        ? `${(this.windowWidth < 1024 ? 100 : 87) - (1700 - this.windowWidth) / 75}%`
+        : null;
+        return { width };
+      },
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.windowWidth = window.innerWidth;
+    },
+  },
 };
 </script>
 
 <template>
   <div id="app">
-    <FooterH class="FooterH" />
     <NavBar />
     <div class="custom-container container-fluid">
       <div class="row">
         <div id="AsideLeft" class=" pl-lg-0">
           <AsideLeft />
         </div>
-        <div id="ArticleH">
+        <div :style="ajusteTelaWidth" id="ArticleH">
           <ArticleH />
         </div>
       </div>
     </div>
+    <FooterH class="FooterH" />
   </div>
 </template>
 
@@ -40,6 +65,7 @@ export default {
 #ArticleH {
   width: 87.26%;
   height: 70%;
+  padding-bottom: 50px;
 }
 
 #app {
@@ -60,22 +86,23 @@ export default {
   height: 100px;
 }
 
-* {
-  /* outline: 1px solid rgba(255, 0, 0, 0.171); */
-}
-
-#test2 {
-  outline: 1px solid rgb(55, 0, 255);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .FooterH {
-  width: 89vw !important;
+  width: 89vw ;
   position: fixed;
   bottom: 0% !important;
   left: 12.5rem;
 
-}</style>
+}
+@media (max-width: 1024px) {
+  .FooterH {
+    left: 2.5rem;
+    width: 97vw;
+  }
+}
+@media (max-width: 600px) {
+  #AsideLeft, .FooterH {
+    display: none !important;
+  }
+}
+
+</style>
