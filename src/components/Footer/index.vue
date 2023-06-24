@@ -44,4 +44,10 @@ export default {
   width: 15px;
   height: auto;
 }
+@media (max-width: 1024px) {
+  .contêiner-Footer p {
+    margin-right: 4rem;
+  }
+}
+
 </style>
