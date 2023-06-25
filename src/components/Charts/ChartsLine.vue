@@ -2,7 +2,6 @@
 import VueApexCharts from 'vue-apexcharts';
 import chartOptions from './config/line'
 
-
 export default {
   name: 'ChartsLine',
   props: ['faturamento'],

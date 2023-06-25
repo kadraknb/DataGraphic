@@ -14,7 +14,6 @@ export default {
 <template>
   <div class="custom-container-table shadow-default rounded bg-white">
     <div class="custom-table">
-
       <table class="table">
         <thead>
           <tr>
