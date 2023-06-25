@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <aside class="d-flex flex-column bg-white custom-aside mr-md-2">
+  <aside class="custom-aside ">
     <SectionAside text="Dashboard" :icon="iconBock" />
     <SectionAside text="Clientes potenciais" :icon="iconUserPlus" />
     <SectionAside text="Negócios" :icon="iconBriefcase" />
@@ -30,15 +30,15 @@ export default {
   </aside>
 </template>
 
-
 <style scoped>
 
 aside {
+  background-color: white;
   width: 12.5rem;
-  height: 100vh;
+  height: 100%;
 }
 @media (max-width: 1024px) {
-  .custom-aside {
+  aside {
     width: 2.5rem;
   }
 }

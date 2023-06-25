@@ -27,7 +27,6 @@ export default {
     async getProdutos() {
       const produtos = await Api.getTop10Produtos();
       this.produtos = FormatarAPI.productPercentage(produtos);
-      console.log("🚀 ~ getProdutos ~ produtos:", produtos);
     },
     async getFaturamento() {
       const faturamento = await Api.getFaturamentoAnual();

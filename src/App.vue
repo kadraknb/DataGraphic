@@ -19,12 +19,12 @@ export default {
   },
   computed: {
     ajusteTelaWidth() {
-    const width =
-      this.windowWidth > 950 && this.windowWidth < 1700
-        ? `${(this.windowWidth < 1024 ? 100 : 87) - (1700 - this.windowWidth) / 75}%`
-        : null;
-        return { width };
-      },
+      const width =
+        this.windowWidth > 950 && this.windowWidth < 1700
+          ? `${(this.windowWidth < 1024 ? 100 : 87) - (1700 - this.windowWidth) / 75}%`
+          : null;
+      return { width };
+    },
   },
   mounted() {
     window.addEventListener('resize', this.handleResize);
@@ -43,30 +43,20 @@ export default {
 <template>
   <div id="app">
     <NavBar />
-    <div class="custom-container container-fluid">
-      <div class="row">
-        <div id="AsideLeft" class=" pl-lg-0">
-          <AsideLeft />
-        </div>
-        <div :style="ajusteTelaWidth" id="ArticleH">
-          <ArticleH />
-        </div>
+    <div class="custom-container">
+      <div id="AsideLeft">
+        <AsideLeft />
+      </div>
+      <div :style="ajusteTelaWidth" id="ArticleH">
+        <ArticleH />
       </div>
     </div>
-    <FooterH class="FooterH" />
+    <FooterH id="FooterH" />
   </div>
 </template>
 
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
-
-#ArticleH {
-  width: 87.26%;
-  height: 70%;
-  padding-bottom: 50px;
-}
 
 #app {
   font-family: Nunito, sans-serif;
@@ -74,35 +64,42 @@ export default {
   background-color: #f8f8f8;
 }
 
+
 .shadow-default {
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .custom-container {
-  height: 100vh;
+  display: flex;
 }
 
 #ChartsCircleDonut {
   height: 100px;
 }
 
-.FooterH {
-  width: 89vw ;
+#ArticleH {
+  width: 87.26%;
+  height: 70%;
+  padding-bottom: 50px;
+}
+
+#FooterH {
+  width: 89vw;
   position: fixed;
   bottom: 0% !important;
   left: 12.5rem;
-
 }
+
 @media (max-width: 1024px) {
-  .FooterH {
+  #FooterH {
     left: 2.5rem;
     width: 97vw;
   }
 }
+
 @media (max-width: 600px) {
-  #AsideLeft, .FooterH {
+  #AsideLeft,
+  #FooterH {
     display: none !important;
   }
-}
-
-</style>
+}</style>
