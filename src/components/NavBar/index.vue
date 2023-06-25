@@ -1,7 +1,7 @@
 <script>
-import DarkMode from '../Buttons/DarkMode';
-import User from '../Buttons/User';
-import Default from '../Buttons/Default';
+import DarkModeIcon from '../Buttons/DarkMode';
+import UserIcon from '../Buttons/User';
+import DefaultIcon from '../Buttons/Default';
 import database from '../../images/database-solid.svg';
 import tableCells from '../../images/table-cells-large-solid.svg';
 import expandSolid from '../../images/expand-solid.svg';
@@ -9,10 +9,9 @@ import expandSolid from '../../images/expand-solid.svg';
 export default {
   name: 'NavBar',
   components: {
-    DarkMode,
-    Default,
-    User,
-
+    DarkModeIcon,
+    DefaultIcon,
+    UserIcon,
   },
   data() {
     return {
@@ -31,12 +30,11 @@ export default {
       <img class="logo-navBar" src="../../images/Logo.png" alt="Logo" />
     </div>
     <div class="buttons-NavBar">
-      <DarkMode />
-      <!-- ajust add nome icon -->
-      <Default :icon="database" />
-      <Default :icon="tableCells" />
-      <Default :icon="expandSolid" />
-      <User />
+      <DarkModeIcon />
+      <DefaultIcon :icon="database" />
+      <DefaultIcon :icon="tableCells" />
+      <DefaultIcon :icon="expandSolid" />
+      <UserIcon />
     </div>
   </nav>
 </template>
@@ -51,6 +49,7 @@ export default {
 }
 
 .custom-navbar {
+  margin-bottom: 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
