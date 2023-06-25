@@ -20,7 +20,6 @@ export default {
 <template>
   <div class="shadow-default bg-white rounded custom-ChartsCircle">
     <div id="chart-donut">
-
       <apexchart type="donut" height="376" :options="chartOptions" :series="chartSeries" />
     </div>
   </div>

@@ -8,7 +8,6 @@ export default {
 <template>
   <div class="coston-SectionAside">
     <div class="box-icon ">
-
       <img class="icon-SectionAside" :src="icon" alt="icon" />
     </div>
     <p>{{ text }}</p>
@@ -19,7 +18,6 @@ export default {
 .coston-SectionAside {
   padding-left: .5rem;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
