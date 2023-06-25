@@ -74,6 +74,7 @@ O projeto é organizado da seguinte forma:
 - `Axios`
 - `ApexCharts`
 - `Bootstrap`
+- `Font Awesome`
 
 2 . **API:**
 
