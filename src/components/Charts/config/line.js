@@ -3,7 +3,7 @@ const chartOptions = {
     height: 300,
     type: "line",
     toolbar: { show: false },
-    animations: { enabled: false },
+    animations: { enabled: true },
     zoom: { enabled: false }
   },
   dataLabels: { enabled: false },
@@ -37,7 +37,6 @@ const chartOptions = {
     labels: {
       minWidth: 0,
       maxWidth: 160,
-      decimalsInFloat: 4,
       floating: true,
       style: {
         colors: "#707070",
