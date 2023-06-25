@@ -27,6 +27,7 @@ export default {
     async getProdutos() {
       const produtos = await Api.getTop10Produtos();
       this.produtos = FormatarAPI.productPercentage(produtos);
+      console.log("🚀 ~ getProdutos ~ produtos:", produtos);
     },
     async getFaturamento() {
       const faturamento = await Api.getFaturamentoAnual();
@@ -42,15 +43,14 @@ export default {
     <div class="">
       <h1 id="h-article">Histórico</h1>
       <hr id="hr-article"/>
-      <!-- ajuste if -->
-      <div v-if="faturamento.length > 0" id="box-Charts" class="row">
-        <div class="container-ChartsCircle">
+      <div id="box-Charts" class="row">
+        <div v-if="produtos.length > 0" class="container-ChartsCircle">
           <ChartsCircle :produtos="produtos" />
         </div>
-        <div class="container-ChartsTable">
+        <div v-if="produtos.length > 0" class="container-ChartsTable">
           <ChartsTable :produtos="produtos" />
         </div>
-        <div class="container-ChartsLine">
+        <div v-if="faturamento.length > 0" class="container-ChartsLine">
           <ChartsLine :faturamento="faturamento" />
         </div>
       </div>
