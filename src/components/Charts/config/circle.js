@@ -1,17 +1,19 @@
+const cores = [
+  "#50478a",
+  "#514ba3",
+  "#5454bd",
+  "#5050da",
+  "#6666fa",
+  "#ce2626",
+  "#e53535",
+  "#ff5757",
+  "#f66126",
+  "#ff8826"
+]
+
 const chartOptions = {
   fill: {
-    colors: [
-      "#50478a",
-      "#514ba3",
-      "#5454bd",
-      "#5050da",
-      "#6666fa",
-      "#ce2626",
-      "#e53535",
-      "#ff5757",
-      "#f66126",
-      "#ff8826"
-    ]
+    colors: cores
   },
   title: {
     margin: 14,
@@ -37,8 +39,9 @@ const chartOptions = {
     }
   },
   stroke: {
-    show: false
-  },
+    show: true,
+    colors: cores,
+},
   chart: {
     id: "ChartsCircleDonut",
     type: "donut",
@@ -59,18 +62,7 @@ const chartOptions = {
       colors: "#707070"
     },
     markers: {
-      fillColors: [
-        "#50478a",
-        "#514ba3",
-        "#5454bd",
-        "#5050da",
-        "#6666fa",
-        "#ce2626",
-        "#e53535",
-        "#ff5757",
-        "#f66126",
-        "#ff8826"
-      ],
+      fillColors: cores,
       width: 15,
       height: 15
     }
