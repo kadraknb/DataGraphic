@@ -2,6 +2,9 @@
 
 Este projeto consiste em um aplicativo (APP) que renderiza estatísticas recebidas da API em três tipos de gráficos.
 
+### acesse o deploy do APP [aqui!](https://kadraknb.github.io/Manfing/)
+---
+
 <details>
 <summary><strong> ⚠️ Configurações mínimas para execução do projeto</strong></summary><br />
 
