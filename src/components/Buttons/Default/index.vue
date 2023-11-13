@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="contêiner-Default">
-    <img class="icon-Default" :src="icon" alt="icon" />
+    <img class="icon-Default button-box-default" :src="icon" alt="icon" />
   </div>
 </template>
 

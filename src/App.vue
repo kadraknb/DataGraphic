@@ -64,9 +64,9 @@ export default {
   background-color: #f8f8f8;
 }
 
-
-.shadow-default {
-  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+.button-box-default:hover {
+  filter: drop-shadow(1px 1px 8px rgb(0, 0, 0));
+  transition: 0.5s
 }
 
 .custom-container {
@@ -75,6 +75,10 @@ export default {
 
 #ChartsCircleDonut {
   height: 100px;
+}
+
+.shadow-default {
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 #ArticleH {

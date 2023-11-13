@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    <img class="icon-DarkMode" src="../../../images/toggle-on-solid.svg" alt=" iconUser" />
+    <img class="icon-DarkMode button-box-default" src="../../../images/toggle-on-solid.svg" alt=" iconUser" />
   </div>
 </template>
 
