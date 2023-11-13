@@ -17,16 +17,9 @@ export default {
       chartOptions: {
         ...chartOptions,
         xaxis: {
-          type: "datetime",
-          categories: this.faturamento.map(arr => arr.data),
+          categories: this.faturamento.map(arr => new Date(arr.data).toLocaleString("PT-BR", { month: "numeric", year: "numeric" })),
           tickAmount: this.faturamento.length,
           labels: {
-            formatter(value, timestamp) {
-              const date = new Date(timestamp);
-              const month = date.toLocaleString("default", { month: "short" });
-              const year = date.getFullYear();
-              return `${month}/${year}`;
-            },
             style: {
               colors: "#444444",
               fontSize: "10px",
