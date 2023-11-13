@@ -2,7 +2,7 @@
 
 Este projeto consiste em um aplicativo (APP) que renderiza estatísticas recebidas da API em três tipos de gráficos.
 
-### acesse o deploy do APP [aqui!](https://kadraknb.github.io/Manfing/)
+### acesse o deploy do APP [aqui!](https://kadraknb.github.io/DataGraphic/)
 ---
 
 <details>
@@ -41,7 +41,7 @@ Você pode utilizar o NVM (Node Version Manager) para instalar o Node.js. Siga a
 3. Clone o repositório
 
 - ```bash
-  git clone git@github.com:kadraknb/Manfing.git
+  git clone git@github.com:kadraknb/DataGraphic.git
   ```
 
 4. Aguarde o processo de clonagem ser concluído
@@ -49,7 +49,7 @@ Você pode utilizar o NVM (Node Version Manager) para instalar o Node.js. Siga a
 5. Após o processo de clonagem ser concluído, navegue até a pasta do projeto clonado digitando o comando:
 
 - ```bash
-  cd Manfing
+  cd DataGraphic
   ```
 
 6. Inicializar o projeto
