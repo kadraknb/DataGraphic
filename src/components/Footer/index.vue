@@ -9,18 +9,18 @@ export default {
   <div class="contêiner-Footer">
     <span>
       <p>
-        2023 Manfing - Feito com
+        2023 DataGraphic - Feito com
         <img class="icon-Footer" src="../../images/heart-solid.svg" alt="icon" />
         e muito
         <img class="icon-Footer" src="../../images/mug-saucer-solid.svg" alt="icon" />
-        no Velho Oeste Paranaense
+        
       </p>
 
     </span>
     <span>
       <p>
         <img class="icon-Footer" src="../../images/building-solid.svg" alt="icon" />
-        Empresa Usinagem - 3edb76bc900028
+        Empresa Usinagem
       </p>
     </span>
   </div>
