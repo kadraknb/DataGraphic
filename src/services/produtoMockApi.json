@@ -5,32 +5,32 @@
     "porcentagem": 15
   },
   {
-    "produto": "CAPA DE FECHAMENTO - CF40-01-10",
+    "produto": "CAPA DE FECHAMENTO - CF40-01-11",
     "vendas": 3,
-    "porcentagem": 15
+    "porcentagem": 12
   },
-  { "produto": "MANCAL - KFL10-01-2", "vendas": 61, "porcentagem": 17 },
-  { "produto": "MANCAL - KFL10-01-2", "vendas": 61, "porcentagem": 17 },
+  { "produto": "MANCAL - KFL11-01-2", "vendas": 6, "porcentagem": 6 },
+  { "produto": "MANCAL - KFL10-01-2", "vendas": 18, "porcentagem": 18 },
+  {
+    "produto": "ARRUELA PRESSAO (ACO) - APM-8-12",
+    "vendas": 1,
+    "porcentagem": 10
+  },
   {
     "produto": "ARRUELA PRESSAO (ACO) - APM-8-10",
     "vendas": 1,
-    "porcentagem": 17
+    "porcentagem": 3
   },
+  { "produto": "MANCAL - KFL12-01-2", "vendas": 22, "porcentagem": 22 },
+  { "produto": "MANCAL - KFL13-01-2", "vendas": 17, "porcentagem": 17 },
   {
-    "produto": "ARRUELA PRESSAO (ACO) - APM-8-10",
-    "vendas": 1,
-    "porcentagem": 17
-  },
-  { "produto": "MANCAL - KFL10-01-2", "vendas": 61, "porcentagem": 17 },
-  { "produto": "MANCAL - KFL10-01-2", "vendas": 61, "porcentagem": 17 },
-  {
-    "produto": "CAPA DE FECHAMENTO - CF40-02-4",
+    "produto": "CAPA DE FECHAMENTO - CF40-02-3",
     "vendas": 4,
-    "porcentagem": 17
+    "porcentagem": 5
   },
   {
-    "produto": "CAPA DE FECHAMENTO - CF40-02-4",
-    "vendas": 4,
-    "porcentagem": 17
+    "produto": "CAPA DE FECHAMENTO - CF40-02-5",
+    "vendas": 33,
+    "porcentagem": 27
   }
 ]
