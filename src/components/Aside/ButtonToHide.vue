@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="box-BarsSolid">
+  <div class="box-BarsSolid button-box-default">
     <img class="icon-BarsSolid" src="../../images/bars-solid.svg" alt="icon iconBarsSolid" />
   </div>
 </template>

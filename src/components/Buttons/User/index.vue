@@ -13,7 +13,7 @@ export default {
   <div class="flax row ">
     <p>{{ user.name }}</p>
     <div class="box-icon">
-      <img class="icon-User" src="../../../images/user-solid.svg" alt=" iconUser" />
+      <img class="icon-User button-box-default" src="../../../images/user-solid.svg" alt=" iconUser" />
     </div>
   </div>
 </template>

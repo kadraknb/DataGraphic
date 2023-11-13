@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <div class="coston-SectionAside">
+  <div class="coston-SectionAside button-box-default">
     <div class="box-icon ">
       <img class="icon-SectionAside" :src="icon" alt="icon" />
     </div>
